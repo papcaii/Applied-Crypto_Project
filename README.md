@@ -1,9 +1,11 @@
 # Applied-Crypto_Project1
 A password manager using SubtleCrypto library
 
+
+
 ## Checklist
 
-1.  **Functionality:**
+###  Functionality
     
 - [ ]   **`init(password)`:** Correctly derives keys (PBKDF2, then HMAC for `k_mac` and `k_enc`), generates a salt, and initializes a new `Keychain` instance.
 - [ ]   **`load(password, representation, trustedDataCheck)`:** Correctly parses the JSON, derives keys using the provided password and stored salt, verifies the `trustedDataCheck` (if provided), and loads the KVS. Throws an error if the integrity check fails or the password is invalid.
@@ -13,6 +15,11 @@ A password manager using SubtleCrypto library
 - [ ]   **`remove(name)`:** Correctly calculates the HMAC of the domain name, removes the entry from the KVS, and returns `true` if found, `false` otherwise.
 - [ ]   **`constructor()`:** Initializes an empty `kvs` object.
 
-2. **Questions**
+### Test
+
+- [ ] Chạy test có sẵn (`npm test`)
+
+### Questions
 
 - [ ]   Trả lời đống câu hỏi ở cuối
+
